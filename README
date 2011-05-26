@@ -2,5 +2,35 @@
 **PHP-Consumator*************
 *****************************
 
-Acesta este consumatorul php.
-Acum a fost modificat.
+-PHP-Consumator este alcatuit din 3 fisiere:
+    
+-->  php_client.php
+
+         --> fisier PHP unde se depune cererea utilizatorului
+         --> cererea reprezinta un nume de student de forma (Nume Prenume)
+    
+-->  response.php
+        
+         --> fisier PHP unde se primeste raspunsul in urma cererii efectuate de utilizator
+         --> raspunsul reprezinta interogarea fisierului CSV filtrat cu informatiile din cerirea clientului
+         
+-->  request.css
+        
+        --> fisier CSS pentru definirea aspectului site-ului
+        
+********
+*HOW*TO*        
+********
+
+1.clientul intra pe site-ul : "http://students.info.uaic.ro/~vlad.cristea/tw/php_client.php"
+2.creeaza o cerere:
+    2.1. introduce un nume de student de forma ( Nume Prenume)
+    2.1. se valideaza cererea in momentul in care se apasa pe butonul "Cauta"
+3.in cazul in care numele de utilizator nu exista in fiserul CSV, sau nu a fost gresit sau incorect 
+veti fi redirectat catre o pagina web unde vi se indica eroarea aparuta
+    3.1. puteti sa dai click pe butonul "Inapoi" ca sa va reinnoiti cererea
+4.daca numele studentului a fost gasit in CSV 
+    4.1.sunt retrase acele informatii(valorile XML) de care dispune acest student
+    4.2.se va lua in considerare daca studentul a avut sa nu coechipier
+    4.3.sunt afisate informatii despre student in formatul hashtabel (variabila : valoare) 
+    
